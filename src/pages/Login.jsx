@@ -109,10 +109,10 @@ const LoginPage = () => {
               {resOk ? (
                 <div className="fadein animation-duration-3000 ">
                   <img
-                    src="/demo/images/login/avatar.png"
+                    src={user.image ? `https://res.cloudinary.com/dtydggyis/image/upload/${Object.values(JSON.parse(user.image)[0])[0]}`: Image}
                     alt="Image"
                     height="100"
-                    className="mb-3"
+                    className="mb-3 w-10rem h-10rem border-circle"
                   />
                   <div className="text-900 text-3xl font-medium mb-3">
                     Hola, {user.name}!

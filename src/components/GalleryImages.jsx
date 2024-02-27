@@ -1,10 +1,6 @@
 
 import React, { useState, useEffect, memo } from 'react';
 import { Galleria } from 'primereact/galleria';
-import { PhotoService } from '../service/PhotoService';
-import { Tag } from 'primereact/tag';
-import { Rating } from 'primereact/rating';
-import { Button } from 'primereact/button';
 
 export default memo(function GalleryImages({product}) {
     const [images, setImages] = useState([]);
